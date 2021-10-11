@@ -23,5 +23,40 @@ Therefore we could determine the winner:
 - **Diana DeGette**, who recieved 73.8% of the vote and 272,892 number of votes.
 
 ## Challenge Overview
+Thanks to the oustanding results of the election audit, Tom asked some additional data to complete the previous audit:
+- The voter turnout for each county
+- The percentage of votes from each county out of the total count
+- The county with the highest turnout
 
 ## Challenge Summary
+We worked again with the same set of data to gather now information of each of the three counties:
+- Jefferson
+- Denver
+- Arapahoe
+
+From which we determined that:
+- Jefferson County represents 10.5% of the vote with 38,855 number of voters.
+- Denver County represents 82.8% of the vote with 306,055 number of voters.
+- Arapahoe County represents 6.7% of the vote with 24,801 of voters.
+
+Where the largest County turnout was: **Denver**
+
+Finally we succesfully delivered the analysis required for the audit project, nevertheless this code can be adjusted and replicated for other precincts or elections. e.g.
+
+Selecting the correct file paths
+```
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Create a filename variable to a direct or indirect path to the file.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+```
+It's key to any further analysis to select the correct path for the source elements to get proper communication with the code.
+
+Review the data formath
+```
+# Read the header
+    header = next(reader)
+    print(headers)
+```
+For compatibility purposes between of this code and the new sets of data is important to ensure the CSV file has the same structure; so all the variables stated can run properly.
+![data-3-3-1-first-10-rows](https://user-images.githubusercontent.com/90527212/136732817-088d0be1-b570-4a7b-85c1-662e2cab9921.png)
